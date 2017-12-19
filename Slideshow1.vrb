@@ -1,0 +1,11 @@
+\frametitle{Joining Positive and Negative Words}
+  <<warning=FALSE, message=FALSE>>=
+  words_pos$word<-factor(words_pos$word, levels=words_pos$word)
+  words_neg$word<-factor(words_neg$word, levels=words_neg$word)
+
+  words<-rbind(words_pos, words_neg)
+  @
+  \framebreak
+  <<warning=FALSE, message=FALSE>>=
+  words
+  @
